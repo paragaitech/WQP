@@ -1,0 +1,19 @@
+{
+  "base_rows": 144849,
+  "enriched_rows": 144849,
+  "unique_base_sites": 2236,
+  "usgs_backed_sites_before_filter": 273,
+  "usgs_backed_sites_after_filter": 108,
+  "usgs_long_rows_after_filter": 811755,
+  "usgs_exact_nonnull": {
+    "discharge": 6467,
+    "water_temp": 5067,
+    "gage_height": 738
+  },
+  "usgs_nearest_nonnull": {
+    "discharge": 6467,
+    "water_temp": 5073,
+    "gage_height": 738
+  },
+  "carry_forward_days": 7
+}

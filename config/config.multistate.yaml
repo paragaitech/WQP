@@ -1,0 +1,48 @@
+project:
+  name: "AI-Driven Water Quality Prediction and Monitoring"
+  state_codes: ["CA", "OR", "WA", "NV", "AZ"]
+  start_date: "2015-01-01"
+  end_date: "2024-12-31"
+  site_type: "Stream"
+  include_station_metadata: true
+
+targets:
+  final_min_rows: 12000
+  max_rows_preferred: 50000
+  require_30pct_above_minimum: true
+
+research_question_minimums:
+  rq1_regression_statistical_floor: 130
+  rq2_explainability_minimum: 1000
+  rq3_anomaly_detection_minimum: 5000
+  rq4_classification_minimum: 1000
+  rq5_model_comparison_minimum: 2000
+
+wqp:
+  characteristics:
+    - "pH"
+    - "Turbidity"
+    - "Dissolved oxygen"
+  characteristic_synonyms:
+    pH:
+      - "pH"
+    Turbidity:
+      - "Turbidity"
+      - "Turbidity, Hellige turbidimeter"
+      - "Turbidity reduction"
+    Dissolved oxygen:
+      - "Dissolved oxygen"
+      - "Dissolved oxygen (DO)"
+      - "Oxygen, dissolved"
+      - "DO"
+  mime_type: "csv"
+
+quality_filters:
+  min_rows_per_site: 10
+  min_nonnull_targets_per_site: 1
+
+features:
+  create_lags: [1, 3, 7]
+  create_rolling_means: [7, 14]
+  compliance_thresholds:
+    turbidity_gt: 5.0

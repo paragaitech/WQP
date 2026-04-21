@@ -1,0 +1,18 @@
+paths:
+  base_dataset_path: "data/processed/final_dataset.parquet"
+  output_csv_path: "data/processed/final_dataset_enriched.csv"
+  output_parquet_path: "data/processed/final_dataset_enriched.parquet"
+  output_summary_path: "data/processed/usgs_enrichment_summary.json"
+
+usgs:
+  parameter_map:
+    "00060": "discharge"
+    "00010": "water_temp"
+    "00065": "gage_height"
+  site_status: "all"
+  carry_forward_days: 7
+  request_pause_seconds: 0.0
+
+processing:
+  min_usgs_rows_per_site: 5
+  preserve_all_base_rows: true
