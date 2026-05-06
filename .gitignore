@@ -5,27 +5,14 @@ __pycache__/
 venv/
 .env
 
-# Graphify
-graphify-out/
-
-# Agents Files
-AGENTS.md
-CLAUDE.md
-
 # Jupyter
 .ipynb_checkpoints/
 
 # macOS
 .DS_Store
 
-# Codex / Claude local config
 
-.claude/
-
-.codex/
 
 # Generated notebook exports
 
 *.html
-
-*_graph.md
