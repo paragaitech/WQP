@@ -2,7 +2,10 @@
 
 This document summarizes the exploratory data analysis, preprocessing strategy,
 and modeling workflow reviewed from
-`/Users/prane/Downloads/wqp_eda_preprocessing_modelling.ipynb`.
+`/Users/prane/Downloads/WQP/notebooks/wqp_eda_preprocessing_modelling.ipynb`.
+
+An exported HTML version is also available at
+`/Users/prane/Downloads/WQP/notebooks/wqp_eda_preprocessing_modelling.html`.
 
 ## Notebook Purpose
 

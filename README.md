@@ -42,11 +42,15 @@ for a nearest-prior carry-forward window.
 
 ## Notebooks
 The notebooks support the workflow interactively:
-- WQP extraction
-- USGS extraction
-- USGS enrichment validation
-- Merge and feature creation
-- Modeling template
+- `notebooks/01_extract_wqp.ipynb`: WQP extraction
+- `notebooks/02_extract_usgs.ipynb`: USGS extraction
+- `notebooks/01_validate_usgs_enrichment.ipynb`: USGS enrichment validation
+- `notebooks/03_merge_and_features.ipynb`: merge and feature creation
+- `notebooks/04_modeling_template.ipynb`: modeling template
+- `notebooks/wqp_eda_preprocessing_modelling.ipynb`: full EDA,
+  preprocessing, and modeling notebook
+- `notebooks/wqp_eda_preprocessing_modelling.html`: exported HTML version of
+  the full EDA, preprocessing, and modeling notebook
 
 ## Run
 ```bash
